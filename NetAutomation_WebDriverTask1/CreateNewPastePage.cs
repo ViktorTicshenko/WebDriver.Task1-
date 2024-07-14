@@ -31,7 +31,7 @@ namespace NetAutomation_WebDriverTask1
         public void ScrollDown()
         {
             var windowSize = driver.Manage().Window.Size;
-            (driver as IJavaScriptExecutor)?.ExecuteScript($"window.scrollBy(0, 1020);");
+            (driver as IJavaScriptExecutor)?.ExecuteScript($"window.scrollBy(0, {windowSize.Height});");
         }
 
         /// <summary>
